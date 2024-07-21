@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Первый блок -->
+    <section class="block block1">
+        <div class="text-block top-left">
+            <h1>Здравствуйте!</h1>
+        </div>
+        <div class="text-block bottom-right">
+            <p>Меня зовут Таня, мне 19 лет</p>
+        </div>
+        <div class="image-block">
+            <img src="images/image.jpg" alt="Пример работы">
+        </div>
+        <div class="text-block bottom">
+            <p>Я закончила второй курс обучения по программе "Компьютерный дизайн" в институте МИРЭА. У меня есть навыки работы в Figma, Adobe Photoshop, Adobe Illustrator, Blender. Также опыт работы с вёрсткой сайтов (этот сайт я написала на языках программирования HTML, CSS, JavaScript). Активно использую искусственный интеллект в своих работах.</p>
+            <p>Вот несколько моих учебных работ (все без использования ИИ):</p>
+        </div>
+    </section>
+
+    <!-- Второй блок -->
+    <section class="block block2">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/image2.jpg" alt="Журнальный дизайн" 
+                data-content="<div class='popup-content-wrapper scrollable''><img src='images/img2.png'  class='popup-img'>">
+            </div>
+            <div class="grid-item  above">
+                <h2>Журнальный <br> дизайн</h2>     
+            </div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item ">
+                <img src="images/image3.jpg" alt="Дизайн персонажа" 
+                data-content="<div class='popup-content-wrapper scrollable''><img src='images/img3.png'  class='popup-img'>">
+            </div>
+            <div class="grid-item above2"> <h2>Дизайн <br> персонажа</h2></div>
+            
+            <div class="grid-item empty">
+                <img src="images/image5.jpg" 
+                data-content="<div class='popup-content-wrapper dino'><img src='images/img5.png'  class='popup-img'>"> 
+            </div>
+            <div class="grid-item"> <h2>Дизайн <br> плаката</h2> </div>
+            <div class="grid-item"> 
+                <img src="images/image4.jpg" alt="Плакат2" e
+                data-content="<div class='popup-content-wrapper'><img src='images/img4.png'  class='popup-img'>">
+            </div>
+            <div class="grid-item"><h2>Веб-дизайн</h2></div>
+            <div class="grid-item">
+                <img src="images/image6.jpg" alt="Веб-дизайн" 
+                data-content="<div class='popup-content-wrapper scrollable''><img src='images/img6.png'  class='popup-img'>">
+            </div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item">
+                <h2>Анимация</h2>
+            </div>
+            <div class="grid-item">
+                <img src="images/image7.jpg" alt="Анимация" 
+                data-content="<div class='popup-content-wrapper'><img src='images/fishman.gif'  class='popup-img'>">
+            </div>
+
+            <div class="grid-item">
+                <h2>3д  <br> моделирование</h2>
+            </div>
+            <div class="grid-item"> 
+                <img src="images/image8.jpg" alt="3д"  
+                data-content="<div class='popup-content-wrapper'><img src='images/img8.png'  class='popup-img'>">
+            </div>
+            <div class="grid-item empty"></div>
+        </div>
+    </section>
+
+    <!-- Третий блок -->
+    <section class="block block3">
+        <div class="center-content">
+            <p>Спасибо за внимание</p>
+            <a href="https://t.me/borodavchataya_nya" target="_blank"> <i class="icon-telegram"></i>https://t.me/borodavchataya_nya</a>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            
+            <span class="close-btn" id="close-btn"><i class="icon-cancel"></i></span>
+            <div id="popup-inner-content"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

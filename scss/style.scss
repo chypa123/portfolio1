@@ -1,0 +1,223 @@
+
+@import './null';
+
+
+
+
+
+body, html {
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1vw ;
+  background-color: #9FAFBE; /* Измененный цвет фона */
+  color: black;
+  text-align: center;
+  
+}
+body{
+  
+}
+.block {
+  padding: 20px;
+  text-align: center;
+}
+
+.block1 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.text-block {
+  position: absolute;
+  padding: 10px;
+  
+}
+.bottom{
+  justify-content: center;
+  align-items: center;
+  bottom:  80px;
+  text-align: justify;
+  
+  
+
+  p{
+    @extend %reg;
+  }
+  
+}
+.top-left {
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  @extend %bold;
+}
+
+.bottom-right {
+  top: 130px;
+  right: 0px;
+  text-align: right;
+  
+  p{
+    
+    @extend %reg;
+    font-weight: 600;
+    font-size: 150%;
+  }
+  
+}
+
+.image-block {
+  position: relative;
+  top: 47%;
+  transform: translateY(-50%);
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-block img {
+  max-width: 100%;
+}
+
+///
+
+.block2 {
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  
+}
+
+.grid-item {
+  
+  
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2{
+    line-height: 130%;
+  }
+}
+
+.grid-item img {
+  width: 100%;
+  
+}
+
+.block3 p {
+  @extend %bold;
+}
+.block3 {
+  height: 40vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-content {
+  display: flex;
+  flex-direction: column; /* Выровнять элементы по вертикали */
+  text-align: center;
+}
+a {
+  padding-top:10px ;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  @extend %reg;
+  vertical-align:middle;
+  &:hover {
+      text-decoration: underline;
+  }
+  i{
+    font-size: 3vh;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.popup-content {
+  position: relative;
+  background: white;
+  padding: 40px;
+
+  max-width: 100vh;
+  max-height: 90%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 95%;
+  text-align: center;
+}
+.dino{
+  max-width: 60vh;
+}
+.popup-img {
+  max-width: 97%;
+  padding: 0px 0;
+  
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.scrollable {
+  height: 90vh;
+  overflow: auto;
+  max-width: 90vh;
+}
+.scrollable::-webkit-scrollbar {
+  
+  scrollbar-width: 10px; /* Ширина всего элемента навигации */
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: #fff;
+  padding: 10px; /* Цвет дорожки */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  
+  background-color: #9FAFBE; /* Цвет бегунка */
+  border-radius: 20px; /* Округление бегунка */
+  border: 3px solid #9FAFBE; /* Оформление границ бегунка */
+}
+
+@import './media';
+
+
+
+
+
+
