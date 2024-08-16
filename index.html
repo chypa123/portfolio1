@@ -9,92 +9,112 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+        
+    
 
-    <!-- Первый блок -->
-    <section class="block block1">
-        <div class="text-block top-left">
-            <h1>Здравствуйте!!</h1>
+    <section class="block block1" >
+        <div class="block1-insert">
+            <div class="text-block1">
+                <h1>Здравствуйте!</h1>
+                <h2>Меня зовут Таня, мне 19 лет</h2>
+                <img src='images/block1.gif'>
+                <h3>
+                    <p>Я учусь на третьем курсе на&nbsp;кафедре компьютерного дизайна РТУ МИРЭА. Там&nbsp;я&nbsp;изучаю дизайн интерфейсов, 3D&nbsp;моделирование, верстку сайтов, проектирование пользовательского опыта и&nbsp;многое другое.</p>
+                    <p>У меня есть навыки работы в программах Adobe Photoshop, Illustrator и&nbsp;Animate, Blender и&nbsp;Figma. Кроме того, я&nbsp;имею базовые знания программирования на&nbsp;HTML, CSS&nbsp;и&nbsp;JavaScript.</p>
+                    <p>Я стремлюсь начать карьеру в области компьютерного дизайна и&nbsp;применить свои знания и&nbsp;навыки для&nbsp;создания качественных и&nbsp;креативных проектов. Я&nbsp;усердная, люблю и&nbsp;умею работать в&nbsp;команде, всегда соблюдаю дедлайны, слежу за&nbsp;трендами, и&nbsp;у&nbsp;меня есть большое желание учиться&nbsp;новому!</p>
+                </h3>
+            </div>
+            <div class="image-block1">
+                <img src='images/block1.gif'>
+            </div>
+        
         </div>
-        <div class="text-block bottom-right">
-            <p>Меня зовут Таня, мне 19 лет</p>
-        </div>
-        <div class="image-block">
-            <img src="images/image.jpg" alt="Пример работы">
-        </div>
-        <div class="text-block bottom">
-            <p>Я закончила второй курс обучения по программе "Компьютерный дизайн" в институте МИРЭА. У меня есть навыки работы в Figma, Adobe Photoshop, Adobe Illustrator, Blender. Также опыт работы с вёрсткой сайтов (этот сайт я написала на языках программирования HTML, CSS, JavaScript). Активно использую искусственный интеллект в своих работах.</p>
-            <p>Вот несколько моих учебных работ (все без использования ИИ):</p>
-        </div>
+        <a class="arrow" href="#block2"> <i class="icon-down-open"></i></a>
     </section>
 
     <!-- Второй блок -->
-    <section class="block block2">
+    
+    <section class="block block2" id="block2">
+        <h1>Мои работы</h1>
         <div class="grid">
-            <div class="grid-item">
+            <div class="grid-item empty"></div>
+            <div class="grid-item img media12">
                 <img src="images/image2.jpg" alt="Журнальный дизайн" 
                 data-content="<div class='popup-content-wrapper scrollable''><img src='images/img2.png'  class='popup-img'>">
             </div>
-            <div class="grid-item  above">
+            
+            <div class="grid-item media11">
                 <h2>Журнальный <br> дизайн</h2>     
             </div>
-            <div class="grid-item empty"></div>
-            <div class="grid-item empty"></div>
-            <div class="grid-item ">
+            
+            
+            
+            <div class="grid-item img">
                 <img src="images/image3.jpg" alt="Дизайн персонажа" 
                 data-content="<div class='popup-content-wrapper scrollable''><img src='images/img3.png'  class='popup-img'>">
             </div>
-            <div class="grid-item above2"> <h2>Дизайн <br> персонажа</h2></div>
+            <div class="grid-item"> <h2>Дизайн <br> персонажа</h2></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item"> <h2>Анимация</h2></div>
             
-            <div class="grid-item empty">
-                <img src="images/image5.jpg" 
-                data-content="<div class='popup-content-wrapper dino'><img src='images/img5.png'  class='popup-img'>"> 
+            <div class="grid-item img ">
+                <img src="images/image7.jpg" alt="Анимация" data-content="<div class='popup-content-wrapper'><img src='images/fishman.gif'  class='popup-img  non-scroll'>">
+                    
             </div>
-            <div class="grid-item"> <h2>Дизайн <br> плаката</h2> </div>
-            <div class="grid-item"> 
-                <img src="images/image4.jpg" alt="Плакат2" e
-                data-content="<div class='popup-content-wrapper'><img src='images/img4.png'  class='popup-img'>">
-            </div>
-            <div class="grid-item"><h2>Веб-дизайн</h2></div>
-            <div class="grid-item">
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item media42"><h2>Веб-дизайн</h2></div>    
+            <div class="grid-item img media41">
                 <img src="images/image6.jpg" alt="Веб-дизайн" 
                 data-content="<div class='popup-content-wrapper scrollable''><img src='images/img6.png'  class='popup-img'>">
             </div>
             <div class="grid-item empty"></div>
-            <div class="grid-item empty"></div>
-            <div class="grid-item">
-                <h2>Анимация</h2>
-            </div>
-            <div class="grid-item">
-                <img src="images/image7.jpg" alt="Анимация" 
-                data-content="<div class='popup-content-wrapper'><img src='images/fishman.gif'  class='popup-img'>">
-            </div>
-
-            <div class="grid-item">
-                <h2>3д  <br> моделирование</h2>
-            </div>
-            <div class="grid-item"> 
+            
+            <div class="grid-item img media52"> 
                 <img src="images/image8.jpg" alt="3д"  
-                data-content="<div class='popup-content-wrapper'><img src='images/img8.png'  class='popup-img'>">
+                data-content="<div class='popup-content-wrapper'><img src='images/img8.png'  class='popup-img  non-scroll'>">
             </div>
+            <div class="grid-item media51"><h2>3д  <br> моделирование</h2></div>
+            
+            
+            <div class="grid-item img">
+                <img src="images/image5.jpg" 
+                data-content="<div class='popup-content'><img src='images/img5.png'  class='popup-img  non-scroll'>"> 
+            </div>
+            <div class="grid-item"> <h2>Дизайн <br> плаката</h2> </div>
+            
+            <!-- <div class="grid-item img"> 
+                <img src="images/image4.jpg" alt="Плакат2" e
+                data-content="<div class='popup-content-wrapper'><img src='images/img4.png'  class='popup-img'>">
+            </div> -->
+            <!-- <div class="grid-item empty"></div>
             <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div>
+            <div class="grid-item empty"></div> -->
         </div>
-    </section>
+    </section> 
 
     <!-- Третий блок -->
     <section class="block block3">
-        <div class="center-content">
-            <p>Спасибо за внимание</p>
-            <a href="https://t.me/borodavchataya_nya" target="_blank"> <i class="icon-telegram"></i>https://t.me/borodavchataya_nya</a>
+        <div class="thanku">
+            <img class="img-block3" src="images/block3.svg" alt=""> 
+            <h1 class="h1-block3">Спасибо за внимание!</h1>
         </div>
+        <a class="teleg" href="https://t.me/borodavchataya_nya" target="_blank"> <i class="icon-telegram"></i>https://t.me/borodavchataya_nya</a>
+        
     </section>
 
     <div class="popup" id="popup">
-        <div class="popup-content">
-            
+        <div class="popup-content" >
             <span class="close-btn" id="close-btn"><i class="icon-cancel"></i></span>
-            <div id="popup-inner-content"></div>
+            <div class="popup-inner-content" id="popup-inner-content"></div>
         </div>
     </div>
+
+    
 
     <script src="scripts.js"></script>
 </body>
